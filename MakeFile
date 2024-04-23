@@ -1,0 +1,7 @@
+all: client server
+
+client: HTTP_Client.c
+    gcc -o client HTTP_Client.c
+
+server: HTTP_Server.c
+    gcc -o server HTTP_Server.c -lpthread
